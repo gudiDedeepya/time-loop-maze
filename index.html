@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Time-Loop Maze</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="dark">
+
+<header>
+  <h1>⏳ Time-Loop Maze</h1>
+  <p>Escape the maze before time resets reality</p>
+</header>
+
+<main class="game-container">
+
+  <aside class="panel">
+    <div class="stat">⏱ Time: <span id="timer">10</span></div>
+    <div class="stat">⭐ Score: <span id="score">0</span></div>
+    <div class="stat">🏆 Best: <span id="bestScore">0</span></div>
+
+    <select id="level">
+      <option value="easy">Easy</option>
+      <option value="medium">Medium</option>
+      <option value="hard">Hard</option>
+    </select>
+
+    <button onclick="toggleTheme()">🌗 Theme</button>
+    <button onclick="showHint()">💡 Smart Hint</button>
+    <button onclick="resetLoop()">🔁 Reset Loop</button>
+  </aside>
+
+  <section id="maze"></section>
+
+</main>
+
+<footer>
+  <p>
+    🟦 Player | 🟥 Wall | 🟩 Exit  
+    <br>
+    Use Arrow Keys to move
+  </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  transition: 0.4s;
+}
+
+body.dark {
+  background: linear-gradient(135deg, #020617, #0f172a);
+  color: #e5e7eb;
+}
+
+body.light {
+  background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+  color: #020617;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+
+header p {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.game-container {
+  display: grid;
+  grid-template-columns: 260px auto;
+  gap: 20px;
+  padding: 20px;
+}
+
+.panel {
+  background: rgba(255,255,255,0.08);
+  padding: 20px;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+}
+
+.panel .stat {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+button, select {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button {
+  background: #38bdf8;
+  color: #020617;
+}
+
+button:hover {
+  background: #0ea5e9;
+}
+
+#maze {
+  display: grid;
+  gap: 6px;
+  justify-content: center;
+}
+
+.cell {
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  background: #64748b;
+  transition: 0.2s;
+}
+
+.wall {
+  background: #1e293b;
+}
+
+.player {
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  box-shadow: 0 0 12px #38bdf8;
+}
+
+.exit {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+.hint {
+  background: #fde047;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
